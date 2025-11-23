@@ -1,0 +1,8 @@
+.cartListItem,
+.cartListHeader {
+  border-bottom: 2px solid;
+  border-top: 2px solid;
+  margin: 5px;
+  justify-content: center;
+  padding: 20px 0;
+}

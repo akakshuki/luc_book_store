@@ -1,0 +1,57 @@
+.specialHeadingLogin {
+  font-family: Cinzel Decorative;
+  font-size: 46px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.specialHeadingLogin::first-letter {
+  font-size: 100px;
+  color: #210535;
+  padding: 0 30px;
+  margin-right: -30px;
+}
+
+.loginLabel {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 2px;
+  color: #111;
+  max-width: 85%;
+  font-family: Gentium Basic;
+  font-style: normal;
+}
+
+.loginRequired {
+  color: red;
+}
+
+.loginButton {
+  margin: 15px 0;
+  font-family: Gentium Basic;
+  font-style: normal;
+  position: relative;
+  height: auto;
+  display: flex;
+  cursor: pointer;
+  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  transition: 0.1s;
+  border: 1px solid #232323;
+  padding: 15px 35px !important;
+}
+
+.loginButton:hover {
+  background-color: #210535;
+  color: white;
+}

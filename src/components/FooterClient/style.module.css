@@ -1,0 +1,81 @@
+.footerLogo {
+  display: inline-block;
+  font-size: 32px;
+  font-style: normal;
+  font-family: Cinzel Decorative;
+  font-weight: bolder;
+}
+
+.headingStyle {
+  position: relative;
+  font-size: 23px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  z-index: 1;
+  font-family: Cinzel Decorative;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.inputStyle {
+  display: inline-block;
+  padding: 13px 10% 13px 20px;
+  height: 55px;
+  transition: all ease-in-out 0.15s;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.subscribesButton {
+  font-family: Gentium Basic;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.1s;
+  padding: 15px 35px;
+  border-radius: 2px;
+  outline: none;
+  background: #210535;
+  border: 1px solid #210535;
+  color: white;
+}
+
+.categoryItem {
+  font-size: 16px;
+}
+
+.footerSocialIcon {
+  width: 41px;
+  height: 41px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0 #ebebeb;
+  background: white;
+  border-radius: 3px;
+  display: flex;
+}
+
+.footerSocialIcon img {
+  width: 18px;
+  height: 18px;
+}
+
+.footerCopyright {
+  font-family: Gentium Basic;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 13px;
+}

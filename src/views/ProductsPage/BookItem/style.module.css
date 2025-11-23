@@ -1,0 +1,68 @@
+.specialHeading {
+  font-family: Cinzel Decorative;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.viewBook {
+  padding: 0;
+  font-size: 15px;
+  letter-spacing: 3px;
+  font-family: Gentium Basic;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.bookItemWrapper {
+  transition: 0.3s ease-out;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.bookItemWrapper > img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 388px;
+  height: auto;
+  border: 0;
+  outline: 1px solid transparent;
+  filter: blur(0px);
+  transition: 0.3s ease-out;
+}
+
+.bookItemWrapper:hover {
+  transform: rotateY(-45deg);
+}
+
+.hasEdge {
+  position: relative;
+  transform-origin: 35% 50%;
+  transform-style: preserve-3d;
+}
+
+.hasEdge::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 98.5%;
+  bottom: 3px;
+  width: 45px;
+  background: repeating-linear-gradient(
+    to right,
+    #f5f5f5,
+    #f5f5f5 5px,
+    #aaa 5px,
+    #aaa 6px
+  );
+  transform-origin: 0% 50%;
+  transform: rotateY(90deg);
+}
+
+.productItemLink:hover .bookPrice {
+  color: #333;
+}

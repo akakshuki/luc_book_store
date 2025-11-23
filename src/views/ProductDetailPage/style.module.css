@@ -1,0 +1,368 @@
+.breadcrumbStyle {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+
+.breadcrumbDisable {
+  color: gray;
+}
+
+.bookItemWrapper {
+  transition: 0.3s ease-out;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.bookItemWrapper > img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border: 0;
+  outline: 1px solid transparent;
+  filter: blur(0px);
+  transition: 0.3s ease-out;
+}
+
+.bookItemWrapper:hover {
+  transform: rotateY(-15deg);
+}
+
+.hasEdge {
+  position: relative;
+  transform-origin: 35% 50%;
+  transform-style: preserve-3d;
+}
+
+.hasEdge::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 98.5%;
+  bottom: 3px;
+  width: 45px;
+  background: repeating-linear-gradient(
+    to right,
+    #f5f5f5,
+    #f5f5f5 5px,
+    #aaa 5px,
+    #aaa 6px
+  );
+  transform-origin: 0% 50%;
+  transform: rotateY(90deg);
+}
+
+.hasEdge:hover::after {
+  top: 3px;
+  transform: rotateY(50deg);
+}
+
+.bookPriceTagWrapper,
+.bookSaleTagWrapper,
+.readBookTagWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  z-index: 10;
+  color: white;
+  min-height: 28px;
+}
+
+.bookSaleTagWrapper {
+  top: 20px;
+  left: -10px;
+}
+
+.readBookTagWrapper {
+  top: 40%;
+  right: -12px;
+}
+
+.bookSaleTag,
+.readBookTag {
+  position: relative;
+  padding: 10px 35px;
+}
+
+.bookSaleTag {
+  background-color: #d38d45;
+}
+
+.readBookTag {
+  background-color: #210535;
+}
+
+.bookSaleTag::before,
+.bookSaleTag::after {
+  position: absolute;
+  content: '';
+  left: 100%;
+  width: 0;
+  height: 0;
+}
+
+.bookSaleTag::before {
+  top: 0;
+  border-top: 10px solid #d38d45;
+  border-left: 5px solid #d38d45;
+  border-bottom: 10px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.bookSaleTag::after {
+  bottom: 0;
+  border-bottom: 10px solid #d38d45;
+  border-left: 5px solid #d38d45;
+  border-top: 10px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.readBookTag::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 15px 0 0;
+  border-color: #d38d45 transparent transparent transparent;
+}
+
+.bookPriceTagWrapper {
+  right: 0;
+  top: 62%;
+  color: black;
+  padding: 25px;
+  background-color: #fff;
+  transform: translateX(30%);
+  font-size: 30px;
+  font-family: Cinzel Decorative;
+  font-style: normal;
+}
+
+.specialHeading {
+  font-family: Cinzel Decorative;
+  font-size: 56px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.specialHeading::first-letter {
+  font-size: 52px;
+  color: #210535;
+  padding: 0 30px;
+  margin-right: -30px;
+  border: 1px solid #210535;
+}
+
+.seeMoreButton {
+  margin-top: 20px;
+  background-color: #fafafa;
+  border: none;
+  color: #d38d45;
+  text-align: left;
+  cursor: pointer;
+  padding-left: 0px;
+}
+
+.addToCartButton {
+  font-family: Gentium Basic;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.1s;
+  padding: 15px 35px;
+  border-radius: 2px;
+  background-color: white;
+  outline: none;
+  border: 1px solid;
+}
+
+.addToCartButton:hover {
+  background: #210535;
+  border: 1px solid #210535;
+  color: white;
+}
+
+.descriptionTitleWrapper {
+  position: relative;
+}
+
+.descriptionTitleWrapper::before {
+  position: absolute;
+  content: '';
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+  height: 30%;
+  background-color: #ddd;
+  background-image: radial-gradient(
+      circle at 100% 150%,
+      #ddd 24%,
+      white 25%,
+      white 28%,
+      #ddd 29%,
+      #ddd 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 150%,
+      #ddd 24%,
+      white 25%,
+      white 28%,
+      #ddd 29%,
+      #ddd 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      white 10%,
+      #ddd 11%,
+      #ddd 23%,
+      white 24%,
+      white 30%,
+      #ddd 31%,
+      #ddd 43%,
+      white 44%,
+      white 50%,
+      #ddd 51%,
+      #ddd 63%,
+      white 64%,
+      white 71%,
+      transparent 71%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      white 5%,
+      #ddd 6%,
+      #ddd 15%,
+      white 16%,
+      white 20%,
+      #ddd 21%,
+      #ddd 30%,
+      white 31%,
+      white 35%,
+      #ddd 36%,
+      #ddd 45%,
+      white 46%,
+      white 49%,
+      transparent 50%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      white 5%,
+      #ddd 6%,
+      #ddd 15%,
+      white 16%,
+      white 20%,
+      #ddd 21%,
+      #ddd 30%,
+      white 31%,
+      white 35%,
+      #ddd 36%,
+      #ddd 45%,
+      white 46%,
+      white 49%,
+      transparent 50%,
+      transparent
+    );
+  background-size: 50px 25px;
+}
+
+.descriptionTitle {
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  margin-bottom: 0;
+  z-index: 10;
+  font-family: Gentium Basic;
+  font-style: normal;
+  font-size: 46px;
+  font-weight: bolder;
+}
+
+.specialDescription {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.specialDescription::first-letter {
+  color: #210535;
+  float: left;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 58px;
+  padding: 10px 10px 2px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+}
+
+.specialDescription:first-of-type {
+  display: inline-block;
+  width: 100%;
+}
+
+.newLetter {
+  position: relative;
+  font-size: 23px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  z-index: 1;
+  font-family: Cinzel Decorative;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.newLetter::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 100%;
+  height: 2px;
+  width: 40px;
+  margin-right: 10px;
+  margin-top: -1px;
+  background-color: #210535;
+  width: 35px;
+  box-sizing: border-box;
+}
+
+.inputStyle {
+  display: inline-block;
+  padding: 13px 10% 13px 20px;
+  height: 55px;
+  transition: all ease-in-out 0.15s;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+}

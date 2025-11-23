@@ -1,0 +1,44 @@
+.headerLogo {
+  display: inline-block;
+  font-size: 32px;
+  font-style: normal;
+  font-family: Cinzel Decorative;
+  font-weight: bolder;
+}
+
+.menu {
+  font-size: 13px;
+}
+
+.menuItem {
+  margin: 0 40px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.menuItem:last-child {
+  margin: 0 10px;
+}
+
+.active {
+  margin-left: 20px;
+  color: var(--primary) !important;
+}
+
+.subMenu {
+  min-width: max-content;
+  width: max-content;
+  min-height: max-content;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px 0px;
+  border-radius: 2px;
+}
+
+.subMenuItem {
+  line-height: 1.5715;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.subMenuItem:hover {
+  background-color: white;
+}

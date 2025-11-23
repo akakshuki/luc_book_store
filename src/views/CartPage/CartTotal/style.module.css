@@ -1,0 +1,143 @@
+.cartTotalHeaderBlock {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.cartTotalHeader::before {
+  position: absolute;
+  content: '';
+  top: 20px;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+  height: 30px;
+  background-color: #ddd;
+  background-image: radial-gradient(
+      circle at 100% 150%,
+      #ddd 24%,
+      white 25%,
+      white 28%,
+      #ddd 29%,
+      #ddd 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 150%,
+      #ddd 24%,
+      white 25%,
+      white 28%,
+      #ddd 29%,
+      #ddd 36%,
+      white 36%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 50% 100%,
+      white 10%,
+      #ddd 11%,
+      #ddd 23%,
+      white 24%,
+      white 30%,
+      #ddd 31%,
+      #ddd 43%,
+      white 44%,
+      white 50%,
+      #ddd 51%,
+      #ddd 63%,
+      white 64%,
+      white 71%,
+      transparent 71%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 100% 50%,
+      white 5%,
+      #ddd 6%,
+      #ddd 15%,
+      white 16%,
+      white 20%,
+      #ddd 21%,
+      #ddd 30%,
+      white 31%,
+      white 35%,
+      #ddd 36%,
+      #ddd 45%,
+      white 46%,
+      white 49%,
+      transparent 50%,
+      transparent
+    ),
+    radial-gradient(
+      circle at 0 50%,
+      white 5%,
+      #ddd 6%,
+      #ddd 15%,
+      white 16%,
+      white 20%,
+      #ddd 21%,
+      #ddd 30%,
+      white 31%,
+      white 35%,
+      #ddd 36%,
+      #ddd 45%,
+      white 46%,
+      white 49%,
+      transparent 50%,
+      transparent
+    );
+  background-size: 50px 25px;
+}
+.cartTotalTitle {
+  font-size: 34px;
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  margin-bottom: 0;
+  z-index: 10;
+  font-family: Gentium Basic;
+  font-style: normal;
+  color: #222;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.cartTotalTable {
+  margin-top: 50px;
+}
+
+.cartTotalCell {
+  border-bottom: 1px solid #bbb;
+  padding: 20px 32px;
+}
+
+.cartTotalCellTitle {
+  font-weight: 700;
+}
+
+.cartTotalCellTitleSub {
+  background-color: rgba(0, 0, 0, 0.02);
+  border-bottom: 2px solid #747474;
+}
+
+.viewBook {
+  font-family: Gentium Basic;
+  font-size: 17px;
+  /* padding: 15px 35px; */
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  /* width: 200px; */
+  height: 60px;
+  margin-right: 15px;
+}
+
+.viewBook:hover {
+  background-color: #210535;
+  color: #fff;
+}

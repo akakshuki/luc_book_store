@@ -1,0 +1,47 @@
+.specialHeading {
+  font-family: Cinzel Decorative;
+  color: white;
+  font-size: 64px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.bannerBackground {
+  width: 100%;
+  height: 100vh;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+}
+
+.specialHeading::first-letter {
+  color: white;
+  padding: 0 30px;
+  margin-right: -30px;
+  border: 1px solid white;
+}
+
+.specialSubtitle {
+  border-bottom: 3px dotted white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 4px 0;
+}
+
+.textContainer {
+  padding: 24px 0;
+}
+
+.textLanding {
+  line-height: 1.82em;
+  font-size: 16px;
+}
