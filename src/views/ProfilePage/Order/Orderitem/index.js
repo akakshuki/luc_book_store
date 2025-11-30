@@ -5,8 +5,6 @@ import BookItem from 'views/SearchPage/BookItem';
 import styles from '../../style.module.css';
 
 const OrderItem = (props) => {
-  require('dotenv').config();
-
   const { count, product } = props;
 
   return (
