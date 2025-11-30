@@ -21,7 +21,7 @@ const Order = () => {
     console.log(response);
     // dispatch(actionCreator.actGetOrder({ userId: user?.id }));
     setUserOrders(response?.body);
-  }, []);
+  }, [user?.id]);
 
   useEffect(() => {
     fetchOrders();
