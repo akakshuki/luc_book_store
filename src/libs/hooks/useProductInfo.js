@@ -15,7 +15,7 @@ const useProductInfo = (products) => {
       if (!product?.displayToUser) {
         products.splice(index, 1);
       }
-      if (!product) return;
+      if (!product) return null;
       const cartProduct = cartProducts.find((prod) => prod.id === product?.id);
       if (cartProduct) {
         product = { ...cartProduct };

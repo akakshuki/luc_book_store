@@ -1,6 +1,5 @@
 import cookie from 'js-cookie';
 import axios from 'axios';
-require('dotenv').config();
 
 const BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8080';
 
