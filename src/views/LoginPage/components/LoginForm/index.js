@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Form, Input } from 'antd';
+import { Row, Col, Form, Input, notification } from 'antd';
 import { Link } from '@reach/router';
 import { useDispatch } from 'react-redux';
 
@@ -14,6 +14,14 @@ const LoginForm = () => {
 
   const handleSubmit = (values) => {
     return dispatch(actionCreator.login({ ...values }));
+  };
+
+  const handleSsoClick = () => {
+    notification.error({
+      message: 'SSO Connection Failed',
+      description:
+        'Could not connect to the Keycloak server. Please try again later.',
+    });
   };
 
   return (
@@ -93,7 +101,15 @@ const LoginForm = () => {
                 Log in
               </button>
             </Col>
-
+            <Col>
+              <button
+                type="button"
+                className={styles.loginButton}
+                onClick={handleSsoClick}
+              >
+                Login with Keycloak
+              </button>
+            </Col>
             <Col>
               <Row align="middle" style={{ height: '100%' }}>
                 <span
